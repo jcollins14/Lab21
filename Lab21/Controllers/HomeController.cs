@@ -28,6 +28,19 @@ namespace Lab21.Controllers
             return View();
         }
 
+        public IActionResult Submit(User user)
+        {
+            ViewBag.UserName = user.UserName;
+            ViewBag.Email = user.Email;
+            ViewBag.PassWord = user.PassWord;
+            return View();
+        }
+
+        public IActionResult Register()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
