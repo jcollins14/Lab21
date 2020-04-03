@@ -2,11 +2,45 @@
 
 <form action="submit" method="post">
     <p>Select A Username:</p>
-    <input UserName type="text" name="UserName" required/>
+    <input UserName type="text" name="UserName"/>
     <p>Select A Password:</p>
-    <input PassWord type="password" name="PassWord" minlength="5" maxlength="28" required/>
+    <input PassWord type="password" name="PassWord"/>
+    <p>Confirm your Password</p>
+    <input Confirm type="password" name="Confirm"/>
     <p>Input your Email:</p>
     <input Email type="email" name="Email" required/>
     <input submit type="submit" />
+
+    <fieldset>
+        <legend>Fun Facts:</legend>
+        <label for="birthday">Select your Birthday Month</label>
+        <select id="birthday">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+        <p>Keyboard Preference</p>
+        <input type="radio" name="keyboard" value="Mechanical" />
+        <input type="radio" name="keyboard" value="Rubber Membrane" />
+        <p>Genres of Games Played (Select all that apply)</p>
+        <input type="checkbox" name="genre" value="MMORPG" id="MMORPG">
+        <input type="checkbox" name="genre" value="FPS" id="FPS">
+        <input type="checkbox" name="genre" value="Strategy" id="Strategy">
+        <input type="checkbox" name="genre" value="JRPG" id="JRPG">
+        <input type="checkbox" name="genre" value="MOBA" id="MOBA">
+        <input type="checkbox" name="genre" value="Platformer" id="Platformer">
+        <input type="checkbox" name="genre" value="Trading Card Game" id="Trading Card Game">
+        <input type="checkbox" name="genre" value="Fighting" id="Fighting">
+        <input type="checkbox" name="genre" value="RTS" id="RTS">
+    </fieldset>
 </form>
 
