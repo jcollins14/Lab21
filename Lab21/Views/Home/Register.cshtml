@@ -5,16 +5,15 @@
     <input UserName type="text" name="UserName"/>
     <p>Select A Password:</p>
     <input PassWord type="password" name="PassWord"/>
-    <p>Confirm your Password</p>
-    <input Confirm type="password" name="Confirm"/>
     <p>Input your Email:</p>
-    <input Email type="email" name="Email" required/>
-    <input submit type="submit" />
-
+    <input Email type="email" name="Email"/>
+    <p>Input your Phone Number:</p>
+    <input PhoneNum type="tel" name="PhoneNum" />
+    <br />
     <fieldset>
         <legend>Fun Facts:</legend>
-        <label for="birthday">Select your Birthday Month</label>
-        <select id="birthday">
+        <label for="BirthdayMonth">Select your Birthday Month</label>
+        <select id="BirthdayMonth" name="BirthdayMonth">
             <option value="January">January</option>
             <option value="February">February</option>
             <option value="March">March</option>
@@ -29,18 +28,31 @@
             <option value="December">December</option>
         </select>
         <p>Keyboard Preference</p>
-        <input type="radio" name="keyboard" value="Mechanical" />
-        <input type="radio" name="keyboard" value="Rubber Membrane" />
+        <input type="radio" name="KeyboardPref" value="Mechanical" id="mech" />
+        <label for="mech">Mechanical</label>
+        <input type="radio" name="KeyboardPref" value="Rubber Membrane" id="rubber" />
+        <label for="rubber">Rubber Membrane</label>
         <p>Genres of Games Played (Select all that apply)</p>
-        <input type="checkbox" name="genre" value="MMORPG" id="MMORPG">
-        <input type="checkbox" name="genre" value="FPS" id="FPS">
-        <input type="checkbox" name="genre" value="Strategy" id="Strategy">
-        <input type="checkbox" name="genre" value="JRPG" id="JRPG">
-        <input type="checkbox" name="genre" value="MOBA" id="MOBA">
-        <input type="checkbox" name="genre" value="Platformer" id="Platformer">
-        <input type="checkbox" name="genre" value="Trading Card Game" id="Trading Card Game">
-        <input type="checkbox" name="genre" value="Fighting" id="Fighting">
-        <input type="checkbox" name="genre" value="RTS" id="RTS">
+        <input type="checkbox" name="Genre" value="MMORPG" id="MMORPG">
+        <label for="MMORPG">MMORPG</label>
+        <input type="checkbox" name="Genre" value="FPS" id="FPS">
+        <label for="FPS">FPS</label>
+        <input type="checkbox" name="Genre" value="Strategy" id="Strategy">
+        <label for="Strategy">Strategy</label>
+        <input type="checkbox" name="Genre" value="JRPG" id="JRPG">
+        <label for="JRPG">JRPG</label>
+        <input type="checkbox" name="Genre" value="MOBA" id="MOBA">
+        <label for="MOBA">MOBA</label>
+        <input type="checkbox" name="Genre" value="Platformer" id="Platformer">
+        <label for="Platformer">Platformer</label>
+        <input type="checkbox" name="Genre" value="Trading Card Game" id="tcg">
+        <label for="tcg">Trading Card Game</label>
+        <input type="checkbox" name="Genre" value="Fighting" id="Fighting">
+        <label for="Fighting">Fighting</label>
+        <input type="checkbox" name="Genre" value="RTS" id="RTS">
+        <label for="RTS">RTS</label>
     </fieldset>
+    <br />
+    <input submit type="submit" />
 </form>
 

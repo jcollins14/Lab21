@@ -1,3 +1,13 @@
 ﻿<h1>Welcome @ViewBag.UserName</h1>
-<p> You are currently registered at @ViewBag.Email</p>
-
+<p>You are currently registered at @ViewBag.Email, and can be reached at @ViewBag.PhoneNum.</p>
+<p>You prefer @ViewBag.Pref Keyboards.</p>
+<p>Your birthday is in @ViewBag.Birthday!</p>
+<p>You like the following Genres of Games: </p>
+<ul>
+    @{
+        foreach (string genre in ViewBag.Genres)
+        {
+            <li>@genre</li>
+        }
+    }
+</ul>
